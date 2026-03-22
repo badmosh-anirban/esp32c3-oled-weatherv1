@@ -2,7 +2,7 @@
 
 A mini weather station using ESP32-C3, an I2C OLED display, and [OpenWeatherMap API](https://openweathermap.org/current?collection=current_forecast). The Esp32 fetches weather data from OpenWeatherMap based on your location(specified in the code) and time(from ntp), and displays information such as temperature, humidity, wind, and sunrise/sunset times etc. on the OLED, cycling through multiple screens automatically or with touch input.
 
-<img src="demo_screens.jpg" alt="demo screens" width="40%"/>
+<img src="demo_screens.jpg" alt="demo screens" width="60%"/>
 
 ## Components List
 
@@ -70,7 +70,7 @@ hiiiiii
 - Ensure your OpenWeatherMap account is active and the API key is valid.
 - The project requires the following Arduino libraries: `WiFi.h`, `HTTPClient.h`, `ArduinoJson.h`, `Adafruit_GFX.h`, `Adafruit_SSD1306.h`, `Wire.h`.
 
-  <img src="ttp223_diagram.jpg" alt="TTP223 Touch Sensor Pinout" width="30%"/>
+  <img src="ttp223_diagram.jpg" alt="TTP223 Touch Sensor Pinout" width="60%"/>
 
 <!-- ## Images
 
