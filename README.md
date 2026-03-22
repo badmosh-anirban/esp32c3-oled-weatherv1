@@ -4,7 +4,11 @@ A mini weather station using ESP32-C3, an I2C OLED display, and [OpenWeatherMap 
 
 <img src="demo_screens.jpg" alt="demo screens" width="60%"/>
 
-## API response example
+## API and JSON response example
+
+```url
+https://api.openweathermap.org/data/2.5/weather?lat=22.54&lon=88.39&appid=YOUR_API_KEY&units=metric
+```
 
 ```json
 {
@@ -53,6 +57,10 @@ A mini weather station using ESP32-C3, an I2C OLED display, and [OpenWeatherMap 
   "cod": 200
 }
 ```
+
+If you do not see some of the parameters in your API response it means that these weather phenomena are just not happened for the time of measurement for the city or location chosen. Only really measured or calculated data is displayed in API response.
+
+NOTE: The OpenWeatherMap API(refer [here](https://openweathermap.org/price)) has a free tier with limitations on the number of requests per minute(60 API calls/minute, 1,000,000 calls/month). Ensure you stay within these limits. `weatherInterval` in the code is set to 5 minutes, which means you will make 12 API calls per hour, well within the free tier limits.
 
 ## Components List
 

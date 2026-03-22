@@ -34,7 +34,7 @@ const int daylightOffset_sec = 0;
 
 bool use24HourFormat = false; // true = 24hr, false = 12hr
 
-unsigned long weatherInterval = 180000;  // How often the Api should be called, here 3min
+unsigned long weatherInterval = 300000;  // How often the Api should be called, here 5min
 const long screenInterval = 5000;   // How often should the display change, here 5 sec
 //---------------------------------------------------------------------------------------------------------------------------------------
 
