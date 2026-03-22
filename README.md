@@ -125,8 +125,15 @@ hiiiiii
 - Replace all placeholders in the code (`ssid`, `password`, `lat`, `lon`, `apiKey`, `gmtOffset_sec`) with your actual values.
 - The ESP32c3 super mini has antenna design flaw, it might not connect to wifi.
 - The onboard led(Connected to the GPIO 8 (active low)) of ESP32c3 super mini may blink if you use the default I2C pins.
+- Strapping Pins (try to avoid for general use, they are used for boot mode selection and other special functions):
+
+  - GPIO 2: a strapping to enter bootloader mode – avoid for general use.
+  - GPIO 8: connected to the onboard blue LED (inverted logic/active LOW); Default I2C SDA pin
+  - GPIO 9: connected to BOOT Button (LOW to enter bootloader); Default I2C SCL pin
+
 - Ensure your OpenWeatherMap account is active and the API key is valid.
-- The project requires the following Arduino libraries: `WiFi.h`, `HTTPClient.h`, `ArduinoJson.h`, `Adafruit_GFX.h`, `Adafruit_SSD1306.h`, `Wire.h`.
+- Make sure u have esp32 board support installed in your Arduino IDE and select the correct board and port before uploading.
+- The project requires the following Arduino libraries: `WiFi.h`, `HTTPClient.h`, `ArduinoJson.h`, `Adafruit_GFX.h`, `Adafruit_SSD1306.h`, `time.h`, `Wire.h`. Install these via the Arduino Library Manager if you haven't already.
 - The code is written for the ESP32-C3, but it should be adaptable to other ESP32 or even esp8266 variants with minor changes to pin assignments and possibly some library adjustments.
 - Ensure the TTP223 touch sensor is connected correctly, as it may not work if the wiring is off. Refer to the pinout diagram below for correct connections. Do not short the two pads(A, B) of the touch sensor, this will make it act differently, if you do so u have to update the code accordingly.
 
