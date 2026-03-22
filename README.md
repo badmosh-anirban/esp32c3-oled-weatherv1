@@ -94,7 +94,8 @@ Diagram created using [Cirkit Designer](https://app.cirkitdesigner.com/)
 
 - Then the display will cycle through location(location is auto determined by the latitude and longitude you specify, you may also [refer here](https://openweathermap.org/api/geocoding-api?collection=other) for more information), temperature, humidity, pressure, cloudiness, visibility, wind speed, wind direction, precipitation, and sunrise/sunset time in a loop.
 - I've kept the time, day of the week and the date to be visible in every screen.
-- Tap the touch sensor to manually cycle screens.
+- Tap the touch sensor to manually cycle screens. You can also use a push button instead of the touch sensor, just connect one end to GPIO 6 and the other end to GND, and change `pinMode(TOUCH_PIN, INPUT)` to `pinMode(TOUCH_PIN, INPUT_PULLUP)`.
+- You can adjust the `weatherInterval` and `screenInterval` in the code to change how often the weather data is fetched and how often the display cycles through screens.
 
 ## Pro Tips
 
