@@ -127,6 +127,8 @@ hiiiiii
 - The onboard led(Connected to the GPIO 8 (active low)) of ESP32c3 super mini may blink if you use the default I2C pins.
 - Ensure your OpenWeatherMap account is active and the API key is valid.
 - The project requires the following Arduino libraries: `WiFi.h`, `HTTPClient.h`, `ArduinoJson.h`, `Adafruit_GFX.h`, `Adafruit_SSD1306.h`, `Wire.h`.
+- The code is written for the ESP32-C3, but it should be adaptable to other ESP32 or even esp8266 variants with minor changes to pin assignments and possibly some library adjustments.
+- Ensure the TTP223 touch sensor is connected correctly, as it may not work if the wiring is off. Refer to the pinout diagram below for correct connections. Do not short the two pads(A, B) of the touch sensor, this will make it act differently, if you do so u have to update the code accordingly.
 
   <img src="ttp223_diagram.jpg" alt="TTP223 Touch Sensor Pinout" width="60%"/>
 
