@@ -14,7 +14,7 @@ A mini weather station using ESP32-C3, an I2C OLED display, and [OpenWeatherMap 
 
 ## Circuit Diagram
 
-<img src="circuit_dia1.png" alt="diagram" width="60%"/>
+<img src="circuit_dia1.png" alt="diagram" width="70%"/>
 
 Diagram created using [Cirkit Designer](https://app.cirkitdesigner.com/)
 
