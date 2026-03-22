@@ -47,7 +47,7 @@ Diagram created using [Cirkit Designer](https://app.cirkitdesigner.com/)
 
 ## Possible Improvements
 
-- Add weather icons (sun, cloud, rain) using bitmaps.
+- Add weather icons (sun, cloud, rain) using bitmaps. Refer [here](https://openweathermap.org/weather-conditions) for openweathermap's weather condition codes
 - Support for multiple locations.
 - Get and store the details from a portal(AP mode) instead of hardcoding.
 - Add forecast data (not just current weather).
