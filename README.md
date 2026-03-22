@@ -4,6 +4,56 @@ A mini weather station using ESP32-C3, an I2C OLED display, and [OpenWeatherMap 
 
 <img src="demo_screens.jpg" alt="demo screens" width="60%"/>
 
+## API response example
+
+```json
+{
+  "coord": {
+    "lon": 88.39,
+    "lat": 22.54
+  },
+  "weather": [
+    {
+      "id": 721,
+      "main": "Haze",
+      "description": "haze",
+      "icon": "50d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 26.98,
+    "feels_like": 27.65,
+    "temp_min": 26.98,
+    "temp_max": 26.98,
+    "pressure": 1010,
+    "humidity": 54,
+    "sea_level": 1010,
+    "grnd_level": 1010
+  },
+  "visibility": 4000,
+  "wind": {
+    "speed": 3.6,
+    "deg": 290
+  },
+  "clouds": {
+    "all": 40
+  },
+  "dt": 1774166584,
+  "sys": {
+    "type": 1,
+    "id": 9114,
+    "country": "IN",
+    "sunrise": 1774138139,
+    "sunset": 1774181870
+  },
+  "timezone": 19800,
+  "id": 1275004,
+  "name": "Kolkata",
+  "cod": 200
+}
+```
+
 ## Components List
 
 - ESP32-C3 super mini (any esp32 should work)
